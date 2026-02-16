@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #141414;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #2a2a2c;
+  --text-primary: #ffffff;
+  --text-secondary: #d0d0da;
+  --text-tertiary: #9e9b94;
+  --text-hover: #d0d0da;
+  --foreground: #f5f5f5;
+  --button-color: #4db258;
+  --button-border: #4db258;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #64748b;
+  --secondary-foreground: #f5f5f5;
+  --accent: rgba(0, 0, 0, 0.26);
+  --accent-foreground: #ffffff;
+  --muted: #94a3b8;
+  --muted-foreground: #cbd5e1;
+  --border: #1e293b;
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-foreground: var(--text-primary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-hover: var(--text-hover);
+  --color-button: var(--button-color);
+  --color-button-border: var(--button-border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-success: var(--success);
+  --color-error: var(--error);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
+  }
+
+  p {
+    @apply text-foreground;
+  }
+
+  a {
+    @apply text-foreground;
+  }
+
+  button {
+    @apply text-foreground;
+  }
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

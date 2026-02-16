@@ -1,0 +1,9 @@
+{
+  "StellarPoc": {
+    "ConnectWallet": "Connect Wallet",
+    "YouSend": "You send",
+    "YouReceive": "You receive",
+    "SwapButton": "Swap",
+    "SwapSuccess": "Swap submitted (demo)"
+  }
+}
